@@ -3,7 +3,7 @@ import { set_sidebar } from './utils/auto-gen-sidebar.mjs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/docs-demo/",
-  head: [["link", { rel: "icon", href: "/images/logo.png" }]],
+  head: [["link", { rel: "icon", href: "./logo.png" }]],
   title: "zzc的博客",
   description: "A VitePress Site",
   themeConfig: {

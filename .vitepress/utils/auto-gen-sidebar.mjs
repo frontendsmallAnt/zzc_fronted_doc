@@ -66,6 +66,5 @@ export const set_sidebar = (pathname) => {
   // 过滤掉
   const items = intersections(files, WHITE_LIST);
   // getList 函数后面会讲到
-  console.log(getList(items, dirPath, pathname), 'ffffffff');
   return getList(items, dirPath, pathname);
 };
