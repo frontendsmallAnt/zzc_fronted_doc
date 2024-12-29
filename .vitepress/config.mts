@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto-gen-sidebar.mjs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/docs-demo/",
+  base: "/zzc_fronted_doc/",
   head: [["link", { rel: "icon", href: "./logo.png" }]],
   title: "zzc的博客",
   description: "A VitePress Site",
