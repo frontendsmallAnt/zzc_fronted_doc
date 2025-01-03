@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto-gen-sidebar.mjs';
+import { nav } from './nav'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/zzc_fronted_doc/",
@@ -30,17 +31,7 @@ export default defineConfig({
     outlineTitle: '目录',
     outline: [2,6],
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', 
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ]
-      },
-      { text: 'react', link: '/front-end/react/react1' },
-      { text: 'vue', link: '/front-end/vue/vue1' },
-    ],
+    nav,
     sidebar: {
       "/front-end/react": set_sidebar("front-end/react"),
       "/front-end/vue": set_sidebar("front-end/vue"),
