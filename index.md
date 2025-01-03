@@ -4,12 +4,12 @@ layout: home
 
 hero:
   name: "前端文档"
-  text: "由vitePress搭建"
-  tagline: 珍爱生命，远离996
+  text: "看云的前端小屋"
+  tagline: "不积硅步，无以至千里"
   actions:
     - theme: brand
-      text: 跳转百度
-      link: https://www.baidu.com
+      text: 前端导航
+      link: /
     - theme: alt
       text: API Examples
       link: /api-examples

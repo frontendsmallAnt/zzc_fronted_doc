@@ -3,8 +3,8 @@ import { set_sidebar } from './utils/auto-gen-sidebar.mjs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/zzc_fronted_doc/",
-  head: [["link", { rel: "icon", href: "./logo.png" }]],
-  title: "zzc的博客",
+  head: [["link", { rel: "icon", href: "./narotu.svg" }]],
+  title: "看云的前端之路",
   description: "A VitePress Site",
   themeConfig: {
        // 设置搜索框的样式
@@ -45,18 +45,6 @@ export default defineConfig({
       "/front-end/react": set_sidebar("front-end/react"),
       "/front-end/vue": set_sidebar("front-end/vue"),
     },
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' },
-    //       { text: '两边栏演示', link: '/two-sidebar' },
-    //     ]
-    //   },
-    // ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
