@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
 import { slugify } from '@mdit-vue/shared'
-
+import { withBase } from 'vitepress'
 import { NavLink } from '../types'
 
 const props = defineProps<{
