@@ -21,7 +21,7 @@ features:
   - icon: 📖
     title: 前端物语
     details: 整理前端常用知识点<small>（面试八股文）</small>
-    link: javascriptBasics
+    link: javascriptBasics/前端模块化/commonjs规范
     linkText: 前端常用知识
   - icon: 🧰
     title: 前端工程化

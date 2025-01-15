@@ -34,22 +34,6 @@ export default defineConfig({
     outline: [2,6],
     // https://vitepress.dev/reference/default-theme-config
     nav,
-    // sidebar: [
-    //   {
-    //     text: 'Section Title A',
-    //     items: [
-    //       { text: 'Item A', link: '/item-a' },
-    //       { text: 'Item B', link: '/item-b' },
-    //     ]
-    //   },
-    //   {
-    //     text: 'Section Title B',
-    //     items: [
-    //       { text: 'Item C', link: '/item-c' },
-    //       { text: 'Item D', link: '/item-d' },
-    //     ]
-    //   }
-    // ],
     sidebar: {
       '/frontEndEngineering/': [
         {
@@ -85,11 +69,8 @@ export default defineConfig({
         }
       ],
 
-      // "/front-end/react": set_sidebar("front-end/react"),
-      // "/front-end/vue": [
-      //   { text: 'Item A', link: '/item-a' },
-      //   { text: 'Item B', link: '/item-b' },
-      // ]
+      "/front-end/": set_sidebar("front-end"),
+      "/javascriptBasics/": set_sidebar("javascriptBasics")
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }

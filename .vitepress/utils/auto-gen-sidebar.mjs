@@ -20,7 +20,8 @@ const intersections = (arr1, arr2) =>
   Array.from(new Set(arr1.filter((item) => !new Set(arr2).has(item))));
 
 // 把方法导出直接使用
-function getList(params, path1, pathname) {
+function getList(params, path1, pathname, i = 0) {
+  const ii  = ++i
   // 存放结果
   const res = [];
   // 开始遍历params
@@ -32,10 +33,11 @@ function getList(params, path1, pathname) {
     if (isDir) {
       // 如果是文件夹,读取之后作为下一次递归参数
       const files = fs.readdirSync(dir);
+      console.log(files, '5555')
       res.push({
         text: params[file],
-        collapsible: true,
-        items: getList(files, dir, `${pathname}/${params[file]}`),
+        collapsed: false,
+        items: getList(files, dir, `${pathname}/${params[file]}`, ii),
       });
     } else {
       // 获取名字
@@ -47,7 +49,7 @@ function getList(params, path1, pathname) {
       }
       res.push({
         text: name,
-        link: `${pathname}/${name}`,
+        link: (ii === 2 && name === 'index.md') ? `/${pathname}/` : `${pathname}/${name}`,
       });
     }
   }
