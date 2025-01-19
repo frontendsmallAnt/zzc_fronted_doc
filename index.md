@@ -28,10 +28,5 @@ features:
     details: 前端打包编译相关 
     link: frontEndEngineering/Monorepo/概念
     linkText: 前端工程化
-  - icon: 📘
-    title: 源码阅读
-    details: 前端热门库的源码感悟
-    link: sourceInterpretation
-    linkText: 源码阅读
 ---
 
