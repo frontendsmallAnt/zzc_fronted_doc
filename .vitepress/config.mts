@@ -35,19 +35,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav,
     sidebar: {
-      '/frontEndEngineering/': [
-        {
-          text: 'Monorepo',
-          link: '/frontEndEngineering/Monorepo/'
-        },
-        {
-          text: 'Lerna',
-          collapsed: false,
-          items: [
-            { text: 'lerna', link: '/frontEndEngineering/lerna/' },
-          ]
-        },
-      ],
+      '/frontEndEngineering/': set_sidebar("frontEndEngineering"),
       '/guide/': [
         {
           text: 'Guide',
