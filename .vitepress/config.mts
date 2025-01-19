@@ -35,29 +35,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav,
     sidebar: {
-      '/frontEndEngineering/': set_sidebar("frontEndEngineering"),
-      '/guide/': [
-        {
-          text: 'Guide',
-          collapsed: false,
-          items: [
-            { text: 'Index', link: '/guide/' },
-            { text: 'One', link: '/guide/one' },
-            { text: 'Two', link: '/guide/two' }
-          ]
-        },
-        {
-          text: 'Guide1',
-          collapsed: false,
-          items: [
-            { text: 'Index', link: '/guide/' },
-            { text: 'One', link: '/guide/one' },
-            { text: 'Two', link: '/guide/two' }
-          ]
-        }
-      ],
-
-      "/front-end/": set_sidebar("front-end"),
+      "/frontEndEngineering/": set_sidebar("frontEndEngineering"),
+      "/essay/": set_sidebar("essay"),
       "/javascriptBasics/": set_sidebar("javascriptBasics")
     },
     socialLinks: [

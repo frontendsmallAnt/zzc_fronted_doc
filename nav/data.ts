@@ -67,14 +67,8 @@ export const NAV_DATA: NavData[] = [
     ],
   },
   {
-    title: '看云的站点导航',
+    title: '打字工具',
     items: [
-      {
-        icon: '/logo.png',
-        title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: '/zzc_fronted_doc/front-end/react/react1.html',
-      },
       {
         icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
         title: 'Qwerty Learner',

@@ -9,9 +9,6 @@ export const nav = [
     //   ]
     // },
     {
-      text: '前端随笔', 
-      items: [
-        { text: 'webpack', link: '/essay/index' },
-      ]
+      text: '前端随笔', link: '/essay/原型和原型链'
     },
   ]
